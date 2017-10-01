@@ -1,0 +1,26 @@
+{
+  "name": "bottom-nav-visibility-change",
+  "version": "0.1.0",
+  "description": "Event listener to detect when the visibility of the Mobile Safari bottom navigation bar has changed",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liddiard/bottom-nav-visibility-change.git"
+  },
+  "keywords": [
+    "safari",
+    "navigation",
+    "resize",
+    "event",
+    "listener"
+  ],
+  "author": "Harrison Liddiard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liddiard/bottom-nav-visibility-change/issues"
+  },
+  "homepage": "https://github.com/liddiard/bottom-nav-visibility-change#readme"
+}
