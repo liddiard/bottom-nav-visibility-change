@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes flash {
+        from {
+          border-color: red;
+        }
+        to {
+          border-color: transparent;
+        }
+      }
+      body {
+        height: 4000px;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      #message {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3em;
+        border: 2px solid transparent;
+        padding: 1em;
+        animation: flash 1s forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Scroll and change the orientation of the phone to see the listener in action.</h1>
+    <div id="message-container"></div>
+
+    <script src="../app.js"></script>
+    <script>
+      const messageContainer = document.getElementById('message-container');
+      const listener = new BottomNavVisibilityChangeListener(visibility => {
+        messageContainer.innerHTML = '';
+        const message = document.createElement('div');
+        message.id = 'message';
+        message.innerHTML = 'Visibility change detected. New value: ' + visibility;
+        messageContainer.appendChild(message);
+      });
+    </script>
+  </body>
+</html>
