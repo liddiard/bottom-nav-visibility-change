@@ -3,7 +3,7 @@ const ORIENTATION = {
   LANDSCAPE: 'landscape'
 };
 
-function BottomNavVisibilityChangeListener(callback) {
+export default function BottomNavVisibilityChangeListener(callback) {
   this.navVisible = true;
   this.orientation = getOrientation();
   this.updateVisiblity = updateVisiblity.bind(this);
