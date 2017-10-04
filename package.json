@@ -1,6 +1,6 @@
 {
   "name": "bottom-nav-visibility-change",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Event listener to detect when the visibility of the Mobile Safari bottom navigation bar has changed",
   "main": "app.js",
   "sourceType": "module",
@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/liddiard/bottom-nav-visibility-change/issues"
   },
-  "homepage": "https://github.com/liddiard/bottom-nav-visibility-change#readme"
+  "homepage": "https://github.com/liddiard/bottom-nav-visibility-change#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0"
+  },
+  "presets": ["env"]
 }
