@@ -1,6 +1,6 @@
 {
   "name": "bottom-nav-visibility-change",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Event listener to detect when the visibility of the Mobile Safari bottom navigation bar has changed",
   "main": "app.js",
   "sourceType": "module",
@@ -28,6 +28,5 @@
     "babel-preset-env": "^1.6.0",
     "babelify": "^7.3.0",
     "browserify": "^14.4.0"
-  },
-  "presets": ["env"]
+  }
 }
