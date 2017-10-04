@@ -3,7 +3,7 @@ const ORIENTATION = {
   LANDSCAPE: 'landscape'
 };
 
-module.exports = function BottomNavVisibilityChangeListener(callback) {
+module.exports = callback => {
   this.navVisible = true;
   this.orientation = getOrientation();
   this.updateVisiblity = updateVisiblity.bind(this);
@@ -29,6 +29,10 @@ module.exports = function BottomNavVisibilityChangeListener(callback) {
     this.innerHeight = window.innerHeight;
     this.innerWidth = window.innerWidth;
   });
+
+  this.destroy = () => {
+    window.removeEventListener('resize', this.listener);
+  }
 };
 
 function getOrientation() {
