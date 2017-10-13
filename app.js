@@ -1,4 +1,4 @@
-module.exports = callback => {
+module.exports = function(callback) {
   // PUBLIC
   this.isLandscape = () => window.innerWidth > window.innerHeight;
   // bottom bar is shown in portrait when documentElement client height is
@@ -15,4 +15,4 @@ module.exports = callback => {
       callback(bottomBarVisible);
     }
   });
-};
+}
